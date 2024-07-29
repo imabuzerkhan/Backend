@@ -37,3 +37,14 @@ let scores = [12, 55, 70];
 scores.forEach((score, index, array) => {
   console.log(array);
 });
+
+// add value in foreach
+
+const totalscore = [2,3,4]
+
+let totalval = 1;
+totalscore.forEach((score)=>{
+  const allvalue = totalval + score
+  console.log(allvalue)
+
+})
