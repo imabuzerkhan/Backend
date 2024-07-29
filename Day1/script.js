@@ -24,3 +24,16 @@
 // const value = `number is ${index} : i am a ${name.name} a manazer of home  `
 // console.log(value)
 // })
+
+
+// how to use the aaray argument in foreach
+let newarray = [11,21,31]
+newarray.forEach(( newarray , index ,  array)=>{
+console.log(array)
+})
+
+let scores = [12, 55, 70];
+
+scores.forEach((score, index, array) => {
+  console.log(array);
+});
