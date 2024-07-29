@@ -20,3 +20,7 @@ for (let i = 0; i < number.length; i++) {
 console.log(doublenumber);
 
 // ** with map
+
+const currentnum = [2 ,4 ,7, 9]
+const doublevalue = currentnum.map(num => num*2)
+console.log(doublevalue)
