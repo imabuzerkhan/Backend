@@ -32,18 +32,18 @@ console.log(doublevalue)
 // ? without map
 
 
-const darta = [
-  {id:1 , name:"abuzer"},
-  {id:2 , name:"abuzer"},
-  {id:3 , name:"abuzer",}
-]
+// const darta = [
+//   {id:1 , name:"abuzer"},
+//   {id:2 , name:"abuzer"},
+//   {id:3 , name:"abuzer",}
+// ]
 
-const userid = []
+// const userid = []
 
-for(let i=0 ; i< darta.length ; i++ ){
-  userid.push(darta[i].id)
-}
-console.log(userid)
+// for(let i=0 ; i< darta.length ; i++ ){
+//   userid.push(darta[i].id)
+// }
+// console.log(userid)
 
 
 // ? with map
@@ -53,3 +53,5 @@ const data = [
   {id:4 , age:40},
   {id:6 , age:60}
 ]
+ const userid =data.map( user => user.id)
+console.log(userid)
