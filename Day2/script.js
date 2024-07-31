@@ -31,7 +31,17 @@ const fs = require('fs')
 
 
 // **copy the file
-fs.copyFile("hello.txt" , "./copy/hello.txt" , function(err){
+// fs.copyFile("hello.txt" , "./copy/hello.txt" , function(err){
+//     if(err){
+//       console.log("err")
+  
+//     }else{
+//       console.log("done")
+//     }
+//   } )
+
+// ** delete file
+fs.unlink("hello.txt" , function(err){
     if(err){
       console.log("err")
   
