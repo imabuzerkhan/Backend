@@ -41,7 +41,18 @@ const fs = require('fs')
 //   } )
 
 // ** delete file
-fs.unlink("hello.txt" , function(err){
+// fs.unlink("hello.txt" , function(err){
+//     if(err){
+//       console.log("err")
+  
+//     }else{
+//       console.log("done")
+//     }
+//   } )
+
+// ** remove the directory which is not empty 
+
+fs.rm("./copy" , {recursive:true} , function(err){
     if(err){
       console.log("err")
   
