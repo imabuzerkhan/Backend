@@ -18,7 +18,20 @@ const fs = require('fs')
 //   }
 // })
 
-fs.rename("hey.txt", "hello.txt" , function(err){
+
+// ** rename the file
+// fs.rename("hey.txt", "hello.txt" , function(err){
+//     if(err){
+//       console.log("err")
+  
+//     }else{
+//       console.log("done")
+//     }
+//   } )
+
+
+// **copy the file
+fs.copyFile("hello.txt" , "./copy/hello.txt" , function(err){
     if(err){
       console.log("err")
   
