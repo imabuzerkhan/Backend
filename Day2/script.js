@@ -9,11 +9,20 @@ const fs = require('fs')
 // } )
 
 // ** append file
-fs.appendFile("hey txt" , "kaise hai bhai log", function(err){
-  if(err){
-    console.log("err")
+// fs.appendFile( "kaise hai bhai log", function(err){
+//   if(err){
+//     console.log("err")
 
-  }else{
-    console.log("done")
-  }
-})
+//   }else{
+//     console.log("done")
+//   }
+// })
+
+fs.rename("hey.txt", "hello.txt" , function(err){
+    if(err){
+      console.log("err")
+  
+    }else{
+      console.log("done")
+    }
+  } )
