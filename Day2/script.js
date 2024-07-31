@@ -52,7 +52,18 @@ const fs = require('fs')
 
 // ** remove the directory which is not empty 
 
-fs.rm("./copy" , {recursive:true} , function(err){
+// fs.rm("./copy" , {recursive:true} , function(err){
+//     if(err){
+//       console.log("err")
+  
+//     }else{
+//       console.log("done")
+//     }
+//   } )
+
+
+// ** folder creation 
+fs.mkdir('html folder' , function(err){
     if(err){
       console.log("err")
   
