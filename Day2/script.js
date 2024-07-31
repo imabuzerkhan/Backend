@@ -1,3 +1,4 @@
+
 const fs = require('fs')
 // ** how to create a file in node js
 // fs.writeFile("hey.txt" , "hello iam abuzer khan", function(err){
@@ -63,11 +64,25 @@ const fs = require('fs')
 
 
 // ** folder creation 
-fs.mkdir('html folder' , function(err){
-    if(err){
-      console.log("err")
+// fs.mkdir('html folder' , function(err){
+//     if(err){
+//       console.log("err")
   
-    }else{
-      console.log("done")
+//     }else{
+//       console.log("done")
+//     }
+//   } )
+
+
+// ** file read
+
+
+
+fs.readFile('hey.txt', 'utf8', function(err, data) {
+    if (err) {
+        console.log('Error:', err);
+    } else {
+        console.log('File read successfully');
+        console.log('File contents:', data);
     }
-  } )
+});
