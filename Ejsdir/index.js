@@ -14,6 +14,9 @@ app.get('/html', (req , res)=>{
   res.render("index.ejs")
 } )
 
-
+app.get("/rolldice" ,( req , res) =>{
+  const dice = Math.floor(Math.random() *6 ) +1
+ res.render("rooldice.ejs" , {dice} )
+} )
 
 app.listen(8080)
