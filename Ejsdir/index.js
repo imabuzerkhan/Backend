@@ -19,4 +19,10 @@ app.get("/rolldice" ,( req , res) =>{
  res.render("rooldice.ejs" , {dice} )
 } )
 
+app.get("/instagram/:username" , (req ,res) =>{
+  const {username} = req.params
+  res.render("instagram.ejs", {username} )
+} )
+
+
 app.listen(8080)
